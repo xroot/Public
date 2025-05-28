@@ -1,0 +1,6 @@
+PyMuPDF~=1.25.5
+pdfminer.six
+pydantic~=2.11.4
+jsonschema
+python-dateutil
+pdf2json~=0.3
