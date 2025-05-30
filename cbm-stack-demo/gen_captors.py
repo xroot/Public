@@ -1,6 +1,6 @@
 import json
 import random
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import numpy as np
 
@@ -20,7 +20,7 @@ def generate_sensor_data(sensor_id, timestamp):
               acceleration, fréquence, timestamp, sampling rate.
     """
     np.random.seed(int(sensor_id[-3:]))  # Seed pour reproductibilité selon id
-    acceleration = np.random.normal(0, 0.05, 100).round(4).tolist()
+    acceleration = np.random.logistic(0, 0.05, 100).round(4).tolist()
     frequency = np.linspace(50, 1000, 20).round(2).tolist()
 
     return {
@@ -44,7 +44,9 @@ def generate_all_sensors():
         list: Liste des dictionnaires de données capteurs.
     """
     all_sensors = []
-    base_time = datetime.utcnow()
+    datetime.now(timezone.utc)
+    timestamp = 1571595618.0
+    base_time = datetime.fromtimestamp(timestamp, timezone.utc)
     current_time = base_time
 
     for i in range(1, capteur):

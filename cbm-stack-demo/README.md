@@ -11,8 +11,9 @@ Cette démonstration illustre la **migration d’algorithmes MATLAB vers Python*
 ```
 cbm-stack-demo/
 │
-├── main.py                    → Point d’entrée du projet (lecture + analyse)
-├── cbmcli.py                 → Interface CLI basique pour manipuler la stack
+├── main.py                   → Routeur CLI/GUI (intelligent)
+├── main_cli.py               → Ancien main.py (argparse)
+├── main_gui.py               → Interface Grahique PySide6
 ├── requirements.txt          → Dépendances Python
 ├── Dockerfile                → Conteneurisation du projet
 ├── .gitignore
@@ -22,6 +23,7 @@ cbm-stack-demo/
 │   ├── __init__.py
 │   ├── migration.py          → Contient une fonction migrée depuis MATLAB
 │   └── analyzer.py           → Algorithmes CBM simples (RMS, FFT, seuils)
+│   └── utils.py              → Biblithèque de fonctions utilitaires
 │
 ├── sensor_data/              → Échantillon de données JSON simulées
 │   └── sample_vibration.json
@@ -31,6 +33,47 @@ cbm-stack-demo/
     └── test_migration.py
 ```
 
+## ✅ Objectif de cette phase UI :
+### Créer une interface graphique PySide6 qui permettra de :
+
+* 📂 Sélectionner un fichier capteur .json
+* 🧪 Lancer l’analyse (RMS, FFT, seuil, RMS migré)
+* 📤 Afficher les résultats dans l'UI (pas juste en console)
+* 💾 Générer le rapport PDF (si désiré)
+* 📥 Exporter les résultats en .json
+* 🧲 Lancer/arrêter le mode daemon (bonus UI)
+* (Optionnel) Voir un log ou statut en temps réel
+
+## 🛠️ Étapes de Dev
+### Créer le squelette de l'UI (QMainWindow + QWidgets)
+
+* Intégrer un bouton pour charger un fichier JSON
+* Afficher les données analysées dans des champs lisibles
+* Ajouter les boutons : Analyse, Export JSON, Générer PDF
+* Inclure une section log/stats + daemon (si actif)
+
+## 🎨 UI Design Proposé (simple mais nyangalise)
+````less
+╔══════════════════════════════════════════════════════╗
+║     CBM Stack GUI - Condition-Based Maintenance      ║
+╠══════════════════════════════════════════════════════╣
+║ 📂 Fichier capteur :  [ .../sensors_vibration.json ] ║
+║                                                      ║
+║ 🔘 Résultats de l’analyse :                          ║
+║    - RMS : 0.6789                                    ║
+║    - Alerte seuil : ✅ NON                           ║
+║    - RMS migré : 0.6791                              ║
+║    - FFT : [1.02, 3.56, ...]                         ║
+║                                                      ║
+║ [🧪 Analyser]   [📄 Générer PDF]   [📤 Export JSON] ║
+║                                                      ║
+║ 📡 Mode Daemon : [ DÉMARRER ] [ ARRÊTER ]            ║
+║                                                      ║
+║ 📜 Journal :                                         ║
+║   > Analyse en cours...                              ║
+║   > PDF généré.                                      ║
+╚══════════════════════════════════════════════════════╝
+````
 ---
 
 ## ⚙️ Fonctionnement général
@@ -62,12 +105,29 @@ cbm-stack-demo/
   * Afficher des statistiques.
   * Simuler une alerte de maintenance.
 
-Exemple :
-
-```bash
-python cbmcli.py analyze --file sensor_data/sample_vibration.json
-```
-
+### Exemple d'utilisation 
+* Analyse simple (fichier par défaut)
+````bash
+python main.py analyze
+````
+* Analyse avec fichier personnalisé
+````bash
+python main.py analyze --file sensor_data/sensors_vibration.json
+````
+* Regénérer les données capteurs
+````bash
+python main.py regen
+````
+* Calculer un hash MD5
+````bash
+python main.py checksum --file cbm_engine/analyzer.py
+````
+* Rapport
+````bash
+python main.py report
+# ou avec des options personnalisées :
+python main.py report --file sensor_data/sensors_vibration.json --output my_analysis.pdf
+````
 ---
 
 ## 🧪 5. Tests

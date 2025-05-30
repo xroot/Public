@@ -1,5 +1,10 @@
 # 🧠 Projet – Extraction de données structurées à partir de fichiers PDF
 
+**Version :** 1.1.0  
+**Auteur :** David PONDA E. | GitHub: https://github.com/xroot
+**Plateforme :** Windows 7/8/10   
+**Licence :** MIT
+
 ## Objectif général :
 Système d’extraction des données à partir de fichiers PDF et de les transformer en structures JSON normalisées.
 ___

@@ -1,8 +1,9 @@
 # RefreshEnv.cmd
 
-**Auteur** : David PONDA  
-**Contact** : david.ponda@gmail.com  
-**Copyright** : 2024 | David PONDA - Je suis votre Maquette
+**Version :** 5.1.0  
+**Auteur :** David PONDA E. | GitHub: https://github.com/xroot
+**Plateforme :** Windows 7/8/10   
+**Licence :** GNU-GPL
 
 ## 🌟 Description
 `RefreshEnv.cmd` est un script batch permettant de **rafraîchir les variables d’environnement Windows** sans nécessiter un redémarrage du PC. Il recharge dynamiquement les paramètres système et utilisateur depuis le registre et les applique à la session en cours.

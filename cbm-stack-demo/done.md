@@ -1,5 +1,10 @@
 # ✅ Résumé Technique – Stack CBM Démo (Python CLI)
 
+**Version :** 0.1.1  
+**Auteur :** David PONDA E. | GitHub: https://github.com/xroot
+**Plateforme :**  Windows 7/8/10   
+**Licence :** MIT
+
 ## 🧩 Objectif global
 
 Créer une **démo technique CLI** en Python simulant une **stack CBM** :
