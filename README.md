@@ -74,7 +74,7 @@ Tous les projets sont sous licence MIT sauf mention contraire.
 
 - **Alias** : Dave | 73 k0d3
 - **GitHub** : [github.com/xroot](https://github.com/xroot)
-- **LinkedIn** : [linkedin.com/in/xroot](https://linkedin.com/in/xroot)
+- **LinkedIn** : [linkedin.com/in/david-ponda-92944388/](https://linkedin.com/in/david-ponda-92944388/)
 - **Upwork Ready** ✔️
 
 ## 📌 Roadmap
