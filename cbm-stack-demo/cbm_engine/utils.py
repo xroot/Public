@@ -33,7 +33,11 @@ __all__ = [
     "generate_report",
     "analyze_and_get_results",
     "display_analysis_results",
-    "analyze_and_get_results_from_file"
+    "analyze_and_get_results_from_file",
+    "compute_rms",
+    "compute_fft",
+    "migrated_rms",
+    "detect_threshold"
 ]
 
 
