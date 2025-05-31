@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Bag – Dave | th3 k0d3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/xroot/MyProject/Principal/assets/xroot.svg" />
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+        html.dataset.theme = html.dataset.theme === "dark" ? "light" : "dark";
+      }
+    </script>
+    <style>
+      pre.ascii-art {
+        font-family: monospace;
+        white-space: pre;
+        color: #38bdf8;
+        font-size: 0.8rem;
+      }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans">
+  <header class="text-center py-10 relative">
+    <div class="absolute left-5 top-5 text-left">
+      <pre class="ascii-art leading-none">
+XROOT
+==×==
+</pre>
+    </div>
+    <h1 class="text-4xl font-bold mt-4">🧠 My Bag – Dave | th3 k0d3</h1>
+    <p class="text-gray-400 mt-2">Advanced AI • CBM • Python • CI4 • Computer Vision</p>
+    <button onclick="toggleTheme()" class="mt-4 px-4 py-2 rounded bg-blue-500 hover:bg-blue-600 transition">Toggle Theme</button>
+
+    <!-- GitHub badges -->
+    <div class="flex justify-center gap-2 mt-4">
+      <img src="https://img.shields.io/github/stars/xroot/MyProject?style=social" alt="GitHub stars">
+      <img src="https://img.shields.io/github/forks/xroot/MyProject?style=social" alt="GitHub forks">
+      <img src="https://img.shields.io/github/languages/top/xroot/MyProject?color=blue" alt="Langage principal">
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 grid gap-6">
+    <section>
+      <h2 class="text-2xl font-semibold mb-3">🧪 Projets Techniques</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold">Holy v1.1</h3>
+          <p>Détection temps réel : comportements suspects, YOLOv8, MediaPipe.</p>
+          <span class="text-xs text-green-400">✅ Production</span><br/>
+          <a href="https://github.com/xroot/MyProject/tree/Principal/Holy" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold">CBM Stack Demo</h3>
+          <p>Maintenance conditionnelle : JSON, API, PDF, GUI, Daemon, PySide6.</p>
+          <span class="text-xs text-yellow-400">⚙️ En cours</span><br/>
+          <a href="https://github.com/xroot/MyProject/tree/Principal/CBM" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold">Pdf2Json</h3>
+          <p>Extraction avancée de données PDF vers JSON structuré.</p>
+          <span class="text-xs text-yellow-400">🚧 En cours</span><br/>
+          <a href="https://github.com/xroot/MyProject/tree/Principal/Pdf2Json" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold">Genea R21</h3>
+          <p>Migration CI4 de moteur généalogique avec dashboard Bootstrap.</p>
+          <span class="text-xs text-blue-400">🔄 Migration</span><br/>
+          <a href="https://github.com/xroot/MyProject/tree/Principal/Genea" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mt-6 mb-3">⚙️ Stack & Techs</h2>
+      <div class="flex flex-wrap gap-2 text-sm text-gray-300">
+        <span class="bg-blue-700 px-2 py-1 rounded">Python 3.12</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">YOLOv8</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">MediaPipe</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">PySide6</span>
+        <span class="bg-blue-700 px-2 py-1 rounded">PHP 8.3</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">CI4</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">Flask</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">Bootstrap</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">OpenCV</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">Kali Linux</span>
+        <span class="bg-gray-700 px-2 py-1 rounded">NetHunter</span>
+      </div>
+    </section>
+
+    <section class="mt-10 text-center text-gray-500 text-sm">
+      <p>Made with ❤️ by Dave | th3 k0D3 – Powered by David PONDA E.</p>
+      <p class="mt-1"><a href="https://github.com/xroot" class="text-blue-400 hover:underline">GitHub</a> • <a href="https://linkedin.com/in/david-ponda-92944388/" class="text-blue-400 hover:underline">LinkedIn</a></p>• <a href="https://www.facebook.com/share/16okmcSrfD/" class="text-blue-400 hover:underline">Facebook</a></p>
+    </section>
+  </main>
+</body>
+</html>
