@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>AddFaceDialog</class>
+    <widget class="QDialog" name="AddFaceDialog">
+        <property name="windowTitle">
+            <string>Ajouter un Visage</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,1">
+            <item>
+                <widget class="QLabel" name="previewLabel">
+                    <property name="minimumSize">
+                        <size>
+                            <width>320</width>
+                            <height>240</height>
+                        </size>
+                    </property>
+                    <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="styleSheet">
+                        <string>border: 1px solid gray; background-color: black;</string>
+                    </property>
+                    <property name="text">
+                        <string>Preview</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLineEdit" name="nameInput">
+                    <property name="placeholderText">
+                        <string>Nom de la personne</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="statusLabel">
+                    <property name="styleSheet">
+                        <string>color: orange;</string>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <layout class="QHBoxLayout" name="buttonLayout">
+                    <item>
+                        <widget class="QPushButton" name="btnCapture">
+                            <property name="text">
+                                <string>📷 Capturer</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="btnAddFace">
+                            <property name="text">
+                                <string>✅ Ajouter</string>
+                            </property>
+                            <property name="enabled">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
