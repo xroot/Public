@@ -1,5 +1,4 @@
-# 🧠 MyProject
-
+# 🧠 xRoot | th3 k0D3
 > *Une vitrine technique regroupant mes développements personnels et démonstrateurs avancés en Python, IA, vision par ordinateur, sécurité offensive, et automatisation système.*
 
 ## 📂 Table des matières
