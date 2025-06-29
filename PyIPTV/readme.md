@@ -72,7 +72,7 @@ PyIPTV/
 
 1. **Fenêtre principale vide (PySide6)**
 2. **Chargement d’une liste M3U dans une QListView**
-3. **Test de lecture via `python-vlc` ou `ffplay`**
+3. **Test de lecture via `python-vlc`**
 4. **Création du fichier `favorites.json`**
 5. **Implémentation du tri par pays/catégorie**
 6. **Téléchargement et affichage d’un EPG**
@@ -90,7 +90,7 @@ PySide6
 python-vlc
 m3u-parser
 requests
-lxml
+emoji~=2.14.1
 ```
 
 ---
@@ -113,6 +113,7 @@ Interface en cours de conception.
 
 ## 🧠 Auteur
 
-**Dave | th3 k0D3**
+**D@v3 | th3 k0D3**
 
 Projet propulsé par passion, café et PySide6 ☕🐍
+
