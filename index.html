@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Bag – Dave | th3 k0d3</title>
+    <title>My Public Bag – Dave | th3 k0d3</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/xroot/MyProject/Principal/assets/xroot.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/xroot/public/principal/assets/xroot.svg" />
     <script>
       function toggleTheme() {
         const html = document.documentElement;
@@ -13,31 +13,33 @@
       }
     </script>
     <style>
+      /* Style pour l'art ASCII, en dehors de Tailwind pour la police spécifique */
       pre.ascii-art {
         font-family: monospace;
         white-space: pre;
-        color: #38bdf8;
+        color: #38bdf8; /* Couleur bleu ciel pour le logo */
         font-size: 0.8rem;
+        line-height: 1; /* Assure que les lignes sont bien collées */
       }
     </style>
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans">
   <header class="text-center py-10 relative">
     <div class="absolute left-5 top-5 text-left">
-      <pre class="ascii-art leading-none">
+      <pre class="ascii-art">
 XROOT
 ==×==
 </pre>
     </div>
-    <h1 class="text-4xl font-bold mt-4">🧠 My Bag – Dave | th3 k0d3</h1>
+    <h1 class="text-4xl font-bold mt-4">🧠 My Public Bag – Dave | th3 k0d3</h1>
     <p class="text-gray-400 mt-2">Advanced AI • CBM • Python • CI4 • Computer Vision</p>
     <button onclick="toggleTheme()" class="mt-4 px-4 py-2 rounded bg-blue-500 hover:bg-blue-600 transition">Toggle Theme</button>
 
     <!-- GitHub badges -->
     <div class="flex justify-center gap-2 mt-4">
-      <img src="https://img.shields.io/github/stars/xroot/MyProject?style=social" alt="GitHub stars">
-      <img src="https://img.shields.io/github/forks/xroot/MyProject?style=social" alt="GitHub forks">
-      <img src="https://img.shields.io/github/languages/top/xroot/MyProject?color=blue" alt="Langage principal">
+      <img src="https://img.shields.io/github/stars/xroot/public?style=social" alt="GitHub stars">
+      <img src="https://img.shields.io/github/forks/xroot/public?style=social" alt="GitHub forks">
+      <img src="https://img.shields.io/github/languages/top/xroot/public?color=blue" alt="Langage principal">
     </div>
   </header>
 
@@ -45,29 +47,33 @@ XROOT
     <section>
       <h2 class="text-2xl font-semibold mb-3">🧪 Projets Techniques</h2>
       <div class="grid sm:grid-cols-2 gap-4">
+        <!-- Projet 1 -->
         <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">Holy v1.1</h3>
           <p>Détection temps réel : comportements suspects, YOLOv8, MediaPipe.</p>
           <span class="text-xs text-green-400">✅ Production</span><br/>
-          <a href="https://github.com/xroot/MyProject/tree/Principal/Holy" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
+          <a href="https://github.com/xroot/public/tree/principal/Holy" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
         </div>
+        <!-- Projet 2 -->
         <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">CBM Stack Demo</h3>
           <p>Maintenance conditionnelle : JSON, API, PDF, GUI, Daemon, PySide6.</p>
           <span class="text-xs text-yellow-400">⚙️ En cours</span><br/>
-          <a href="https://github.com/xroot/MyProject/tree/Principal/CBM" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
+          <a href="https://github.com/xroot/public/tree/principal/CBM" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
         </div>
+        <!-- Projet 3 -->
         <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">Pdf2Json</h3>
           <p>Extraction avancée de données PDF vers JSON structuré.</p>
           <span class="text-xs text-yellow-400">🚧 En cours</span><br/>
-          <a href="https://github.com/xroot/MyProject/tree/Principal/Pdf2Json" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
+          <a href="https://github.com/xroot/public/tree/principal/Pdf2Json" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
         </div>
+        <!-- Projet 4 -->
         <div class="bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">Genea R21</h3>
           <p>Migration CI4 de moteur généalogique avec dashboard Bootstrap.</p>
           <span class="text-xs text-blue-400">🔄 Migration</span><br/>
-          <a href="https://github.com/xroot/MyProject/tree/Principal/Genea" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
+          <a href="https://github.com/xroot/public/tree/principal/Genea" class="text-blue-400 text-sm hover:underline">Voir sur GitHub</a>
         </div>
       </div>
     </section>
@@ -89,10 +95,14 @@ XROOT
       </div>
     </section>
 
-    <section class="mt-10 text-center text-gray-500 text-sm">
+    <footer class="mt-10 text-center text-gray-500 text-sm">
       <p>Made with ❤️ by Dave | th3 k0D3 – Powered by David PONDA E.</p>
-      <p class="mt-1"><a href="https://github.com/xroot" class="text-blue-400 hover:underline">GitHub</a> • <a href="https://linkedin.com/in/david-ponda-92944388/" class="text-blue-400 hover:underline">LinkedIn</a></p>• <a href="https://www.facebook.com/share/16okmcSrfD/" class="text-blue-400 hover:underline">Facebook</a></p>
-    </section>
+      <p class="mt-1">
+        <a href="https://github.com/xroot" class="text-blue-400 hover:underline">GitHub</a> • 
+        <a href="https://linkedin.com/in/david-ponda-92944388/" class="text-blue-400 hover:underline">LinkedIn</a> • 
+        <a href="https://www.facebook.com/share/16okmcSrfD/" class="text-blue-400 hover:underline">Facebook</a>
+      </p>
+    </footer>
   </main>
 </body>
 </html>
