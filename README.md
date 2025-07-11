@@ -1,4 +1,4 @@
-# 🧠 MyProject
+# 🧠 Dashboard | th3 k0D3
 
 > *Une vitrine technique regroupant mes développements personnels et démonstrateurs avancés en Python, IA, vision par ordinateur, sécurité offensive, et automatisation système.*
 
@@ -72,7 +72,7 @@ Tous les projets sont sous licence MIT sauf mention contraire.
 
 ## 📬 Contact
 
-- **Alias** : Dave | th3 k0d3
+- **Alias** : Dave | 73 k0d3
 - **GitHub** : [github.com/xroot](https://github.com/xroot)
 - **LinkedIn** : [linkedin.com/in/david-ponda-92944388/](https://linkedin.com/in/david-ponda-92944388/)
 - **Upwork Ready** ✔️
@@ -83,4 +83,4 @@ Tous les projets sont sous licence MIT sauf mention contraire.
 - [x] CBM Stack: JSON, UnitTest, API, PDF, Daemon
 - [ ] CBM Stack: GUI PySide6
 - [ ] CBM Stack: Package `.exe` / `.whl`
-- [ ] Ajouter GitHub Pages comme vitrine
+
