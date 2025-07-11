@@ -83,4 +83,4 @@ Tous les projets sont sous licence MIT sauf mention contraire.
 - [x] CBM Stack: JSON, UnitTest, API, PDF, Daemon
 - [ ] CBM Stack: GUI PySide6
 - [ ] CBM Stack: Package `.exe` / `.whl`
-- [ ] Ajouter GitHub Pages comme vitrine
+
